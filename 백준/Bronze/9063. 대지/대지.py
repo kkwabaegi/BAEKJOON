@@ -1,0 +1,19 @@
+n=int(input())
+minx=10000
+maxx=-10000
+miny=10000
+maxy=-10000
+for i in range(n):
+    a,b=map(int,input().split())
+    if(minx>a):
+        minx=a
+    if(maxx<a):
+        maxx=a
+    if(miny>b):
+        miny=b
+    if(maxy<b):
+        maxy=b
+if(n<=1):
+    print(0)
+else:
+    print((maxx-minx)*(maxy-miny))
